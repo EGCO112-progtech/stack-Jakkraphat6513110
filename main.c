@@ -2,35 +2,37 @@
 #include<stdlib.h>
 #include<string.h>
 #include "node.h"
+#include "stack.h"
 
 int main(int argc, char **argv){
   
-  int i,N,j;
-  NodePtr *top;
-  
-  push(&top,5);
-  pop(&top);
-  push(&top,5);
-  push(&top,5);
- 
- 
+  int i,j;
+  Stack s;
+  s.top = NULL;
+  s.size = 0 ;
+  for(i = 1 ;i < argc;i++){
+      push(&s,atoi(argv[i]));
+  }
+  pop_all(&s);
+
+
   
 
- /*
- Stack s;
+ 
+ /*Stack s;
  printf("Checking the parentheses in argv arguments\n");
   for(i=1;i<argc;i++){
    
      for(j=0;j<strlen(argv[i]);j++){
-       /* Use stack to help with the parentheses*/
+        Use stack to help with the parentheses
 
 
      }
 
 
   }
-*/
 
+*/
 
 
    return 0;

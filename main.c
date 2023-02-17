@@ -11,7 +11,7 @@ int main(int argc, char **argv){
   s.top = NULL;
   s.size = 0 ;
   for(i = 1 ;i < argc;i++){
-      push(&s,atoi(argv[i]));
+      pushs(&s,atoi(argv[i]));
   }
   pop_all(&s);
 

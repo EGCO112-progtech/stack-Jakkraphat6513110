@@ -32,13 +32,13 @@ int main(int argc, char **argv) {
       case ']':
         if (s.size == 0)
           temp = 2;
-        if (pops(&s) != '[')
+        else if (pops(&s) != '[')
           temp = 1;
         break;
       case '}':
         if (s.size == 0)
           temp = 2;
-        if (pops(&s) != '{')
+        else if (pops(&s) != '{')
           temp = 1;
         break;
       }

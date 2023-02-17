@@ -31,7 +31,7 @@ char pops(StackPtr s) {
 void pop_all(StackPtr s) {
   while (s->size > 0) {
     pops(s);
-    s->size--;
+    // s->size--;
   }
 }
 
